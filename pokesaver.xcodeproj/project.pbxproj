@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF11461E1BBD35B10074A029 /* pokesaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = FF11461D1BBD35B10074A029 /* pokesaverView.h */; };
+		FF1146201BBD35B10074A029 /* pokesaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF11461F1BBD35B10074A029 /* pokesaverView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF11461A1BBD35B10074A029 /* pokesaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pokesaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF11461D1BBD35B10074A029 /* pokesaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pokesaverView.h; sourceTree = "<group>"; };
+		FF11461F1BBD35B10074A029 /* pokesaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pokesaverView.m; sourceTree = "<group>"; };
+		FF1146211BBD35B10074A029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF1146161BBD35B10074A029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF1146101BBD35B10074A029 = {
+			isa = PBXGroup;
+			children = (
+				FF11461C1BBD35B10074A029 /* pokesaver */,
+				FF11461B1BBD35B10074A029 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF11461B1BBD35B10074A029 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF11461A1BBD35B10074A029 /* pokesaver.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF11461C1BBD35B10074A029 /* pokesaver */ = {
+			isa = PBXGroup;
+			children = (
+				FF11461D1BBD35B10074A029 /* pokesaverView.h */,
+				FF11461F1BBD35B10074A029 /* pokesaverView.m */,
+				FF1146211BBD35B10074A029 /* Info.plist */,
+			);
+			path = pokesaver;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FF1146171BBD35B10074A029 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF11461E1BBD35B10074A029 /* pokesaverView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FF1146191BBD35B10074A029 /* pokesaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1146241BBD35B10074A029 /* Build configuration list for PBXNativeTarget "pokesaver" */;
+			buildPhases = (
+				FF1146151BBD35B10074A029 /* Sources */,
+				FF1146161BBD35B10074A029 /* Frameworks */,
+				FF1146171BBD35B10074A029 /* Headers */,
+				FF1146181BBD35B10074A029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pokesaver;
+			productName = pokesaver;
+			productReference = FF11461A1BBD35B10074A029 /* pokesaver.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF1146111BBD35B10074A029 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Flavien Raynaud";
+				TargetAttributes = {
+					FF1146191BBD35B10074A029 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = FF1146141BBD35B10074A029 /* Build configuration list for PBXProject "pokesaver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF1146101BBD35B10074A029;
+			productRefGroup = FF11461B1BBD35B10074A029 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1146191BBD35B10074A029 /* pokesaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF1146181BBD35B10074A029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF1146151BBD35B10074A029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1146201BBD35B10074A029 /* pokesaverView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF1146221BBD35B10074A029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FF1146231BBD35B10074A029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FF1146251BBD35B10074A029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = pokesaver/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raynaud.flavien.pokesaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		FF1146261BBD35B10074A029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = pokesaver/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raynaud.flavien.pokesaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF1146141BBD35B10074A029 /* Build configuration list for PBXProject "pokesaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1146221BBD35B10074A029 /* Debug */,
+				FF1146231BBD35B10074A029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1146241BBD35B10074A029 /* Build configuration list for PBXNativeTarget "pokesaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1146251BBD35B10074A029 /* Debug */,
+				FF1146261BBD35B10074A029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF1146111BBD35B10074A029 /* Project object */;
+}
