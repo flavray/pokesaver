@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		FF11461E1BBD35B10074A029 /* pokesaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = FF11461D1BBD35B10074A029 /* pokesaverView.h */; };
 		FF1146201BBD35B10074A029 /* pokesaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF11461F1BBD35B10074A029 /* pokesaverView.m */; };
+		FF11462A1BBD38170074A029 /* pallet-town.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1146291BBD38170074A029 /* pallet-town.png */; settings = {ASSET_TAGS = (); }; };
+		FF2F2C8B1BBF28F30025C10B /* red-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2F2C8A1BBF28F30025C10B /* red-sprite.png */; settings = {ASSET_TAGS = (); }; };
+		FF2F2C8E1BBF29F30025C10B /* PKSCharacter.h in Headers */ = {isa = PBXBuildFile; fileRef = FF2F2C8C1BBF29F30025C10B /* PKSCharacter.h */; settings = {ASSET_TAGS = (); }; };
+		FF2F2C8F1BBF29F30025C10B /* PKSCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2F2C8D1BBF29F30025C10B /* PKSCharacter.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +20,10 @@
 		FF11461D1BBD35B10074A029 /* pokesaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pokesaverView.h; sourceTree = "<group>"; };
 		FF11461F1BBD35B10074A029 /* pokesaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pokesaverView.m; sourceTree = "<group>"; };
 		FF1146211BBD35B10074A029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1146291BBD38170074A029 /* pallet-town.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pallet-town.png"; sourceTree = "<group>"; };
+		FF2F2C8A1BBF28F30025C10B /* red-sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-sprite.png"; sourceTree = "<group>"; };
+		FF2F2C8C1BBF29F30025C10B /* PKSCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKSCharacter.h; path = Classes/PKSCharacter.h; sourceTree = "<group>"; };
+		FF2F2C8D1BBF29F30025C10B /* PKSCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKSCharacter.m; path = Classes/PKSCharacter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +56,12 @@
 		FF11461C1BBD35B10074A029 /* pokesaver */ = {
 			isa = PBXGroup;
 			children = (
+				FF1146291BBD38170074A029 /* pallet-town.png */,
+				FF2F2C8A1BBF28F30025C10B /* red-sprite.png */,
 				FF11461D1BBD35B10074A029 /* pokesaverView.h */,
 				FF11461F1BBD35B10074A029 /* pokesaverView.m */,
+				FF2F2C8C1BBF29F30025C10B /* PKSCharacter.h */,
+				FF2F2C8D1BBF29F30025C10B /* PKSCharacter.m */,
 				FF1146211BBD35B10074A029 /* Info.plist */,
 			);
 			path = pokesaver;
@@ -63,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF11461E1BBD35B10074A029 /* pokesaverView.h in Headers */,
+				FF2F2C8E1BBF29F30025C10B /* PKSCharacter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2F2C8B1BBF28F30025C10B /* red-sprite.png in Resources */,
+				FF11462A1BBD38170074A029 /* pallet-town.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2F2C8F1BBF29F30025C10B /* PKSCharacter.m in Sources */,
 				FF1146201BBD35B10074A029 /* pokesaverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +276,7 @@
 				FF1146261BBD35B10074A029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,15 +13,28 @@
 - (instancetype)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
 {
     self = [super initWithFrame:frame isPreview:isPreview];
+
     if (self) {
-        [self setAnimationTimeInterval:1/30.0];
+        [self setAnimationTimeInterval:1.f/30.f];
     }
+
     return self;
 }
 
 - (void)startAnimation
 {
     [super startAnimation];
+
+    NSBundle *saverBundle = [NSBundle bundleForClass:[self class]];
+
+    self.background = [[NSImage alloc] initWithContentsOfFile:[saverBundle pathForResource:@"pallet-town" ofType:@"png"]];
+
+    // main character, sprite image has 4 animations & 3 frames per animation
+    self.mainCharacter = [[PKSCharacter alloc] initWithSprite:[[NSImage alloc] initWithContentsOfFile:[saverBundle pathForResource:@"red-sprite" ofType:@"png"]]
+                                                   animations:4
+                                                       frames:3];
+
+    self.loop = 0;
 }
 
 - (void)stopAnimation
@@ -32,11 +45,22 @@
 - (void)drawRect:(NSRect)rect
 {
     [super drawRect:rect];
+
+    NSRect bounds = [self bounds];
+    [self.background setSize:bounds.size];
+
+    NSRect imageRect;
+    imageRect.origin = NSZeroPoint;
+    imageRect.size = [self.background size];
+
+    [self.background drawInRect:bounds];
 }
 
 - (void)animateOneFrame
 {
-    return;
+    self.loop++;
+
+    [self setNeedsDisplay: YES];
 }
 
 - (BOOL)hasConfigureSheet
