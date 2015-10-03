@@ -25,16 +25,39 @@
 {
     [super startAnimation];
 
+    // Pallet town directions - Linear combination of {UP,DOWN,LEFT,RIGHT}
+    NSArray* matrix = @[
+                        @[@0, @0, @0, @0, @0, @0, @0, @0, @9, @12, @12, @12, @12, @12, @12, @12, @5, @0],
+                        @[@0, @0, @0, @0, @0, @0, @0, @0, @3, @0, @0, @0, @0, @0, @0, @0, @3, @0],
+                        @[@0, @0, @0, @0, @0, @0, @0, @0, @3, @0, @0, @0, @0, @0, @0, @0, @3, @0],
+                        @[@0, @0, @0, @0, @0, @0, @0, @0, @3, @0, @0, @0, @0, @0, @0, @0, @3, @0],
+                        @[@0, @9, @12, @12, @12, @12, @12, @12, @15, @12, @12, @12, @12, @12, @12, @12, @7, @0],
+                        @[@0, @3, @0, @0, @0, @0, @0, @0, @3, @0, @0, @0, @0, @0, @0, @0, @3, @0],
+                        @[@0, @3, @0, @0, @0, @0, @0, @0, @3, @0, @0, @0, @0, @0, @0, @0, @3, @0],
+                        @[@0, @3, @0, @0, @0, @0, @0, @0, @3, @0, @0, @0, @0, @0, @0, @0, @3, @0],
+                        @[@0, @3, @0, @0, @0, @0, @0, @0, @3, @0, @0, @0, @0, @0, @0, @0, @3, @0],
+                        @[@0, @3, @0, @0, @0, @0, @0, @0, @3, @0, @0, @0, @0, @0, @0, @0, @3, @0],
+                        @[@0, @11, @12, @12, @12, @12, @12, @12, @15, @12, @12, @12, @12, @12, @12, @12, @7, @0],
+                        @[@0, @3, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @3, @0],
+                        @[@0, @3, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @3, @0],
+                        @[@0, @3, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @3, @0],
+                        @[@0, @10, @12, @12, @12, @12, @12, @12, @14, @12, @12, @12, @12, @12, @12, @12, @6, @0],
+                        ];
+
     NSBundle *saverBundle = [NSBundle bundleForClass:[self class]];
 
-    self.background = [[NSImage alloc] initWithContentsOfFile:[saverBundle pathForResource:@"pallet-town" ofType:@"png"]];
+    PKSBackground* background = [[PKSBackground alloc] initWithImage:[[NSImage alloc] initWithContentsOfFile:[saverBundle pathForResource:@"pallet-town" ofType:@"png"]]
+                                                    bounds:NSMakeRect(415.f, 60.f, 1090.f, 905.f)  // values from Pallet-town image
+                                                    matrix:matrix];
 
     // main character, sprite image has 4 animations & 3 frames per animation
-    self.mainCharacter = [[PKSCharacter alloc] initWithSprite:[[NSImage alloc] initWithContentsOfFile:[saverBundle pathForResource:@"red-sprite" ofType:@"png"]]
+    PKSCharacter* mainCharacter = [[PKSCharacter alloc] initWithSprite:[[NSImage alloc] initWithContentsOfFile:[saverBundle pathForResource:@"red-sprite" ofType:@"png"]]
                                                    animations:4
                                                        frames:3];
 
-    self.loop = 0;
+    self.map = [[PKSMap alloc] initWithBackground:background
+                                    maincharacter:mainCharacter
+                                             size:[self bounds].size];
 }
 
 - (void)stopAnimation
@@ -46,19 +69,12 @@
 {
     [super drawRect:rect];
 
-    NSRect bounds = [self bounds];
-    [self.background setSize:bounds.size];
-
-    NSRect imageRect;
-    imageRect.origin = NSZeroPoint;
-    imageRect.size = [self.background size];
-
-    [self.background drawInRect:bounds];
+    [self.map draw];
 }
 
 - (void)animateOneFrame
 {
-    self.loop++;
+    [self.map nextFrame];
 
     [self setNeedsDisplay: YES];
 }

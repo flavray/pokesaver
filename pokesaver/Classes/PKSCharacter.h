@@ -14,11 +14,16 @@
 @property (nonatomic) NSImage* sprite;
 @property (nonatomic) int animations, frames;  // number of animations & frames per animation in sprite
 @property (nonatomic) NSPoint position;
+@property (nonatomic, readonly) int currentAnimation, currentFrame;
 
 - (instancetype)initWithSprite:(NSImage*)sprite animations:(int)animations frames:(int)frames;
 
 - (void)setCurrentAnimation:(int)currentAnimation;
 - (void)nextFrame;
 - (NSRect)rect;
+- (NSRect)bounds;
+
+- (int)dxFrame:(int)totalWidth;
+- (int)dyFrame:(int)totalHeight;
 
 @end

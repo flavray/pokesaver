@@ -13,6 +13,10 @@
 		FF2F2C8B1BBF28F30025C10B /* red-sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = FF2F2C8A1BBF28F30025C10B /* red-sprite.png */; settings = {ASSET_TAGS = (); }; };
 		FF2F2C8E1BBF29F30025C10B /* PKSCharacter.h in Headers */ = {isa = PBXBuildFile; fileRef = FF2F2C8C1BBF29F30025C10B /* PKSCharacter.h */; settings = {ASSET_TAGS = (); }; };
 		FF2F2C8F1BBF29F30025C10B /* PKSCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2F2C8D1BBF29F30025C10B /* PKSCharacter.m */; settings = {ASSET_TAGS = (); }; };
+		FF2F2C921BBF3E830025C10B /* PKSBackground.h in Headers */ = {isa = PBXBuildFile; fileRef = FF2F2C901BBF3E830025C10B /* PKSBackground.h */; settings = {ASSET_TAGS = (); }; };
+		FF2F2C931BBF3E830025C10B /* PKSBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2F2C911BBF3E830025C10B /* PKSBackground.m */; settings = {ASSET_TAGS = (); }; };
+		FF2F2C961BBF45990025C10B /* PKSMap.h in Headers */ = {isa = PBXBuildFile; fileRef = FF2F2C941BBF45990025C10B /* PKSMap.h */; settings = {ASSET_TAGS = (); }; };
+		FF2F2C971BBF45990025C10B /* PKSMap.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2F2C951BBF45990025C10B /* PKSMap.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FF2F2C8A1BBF28F30025C10B /* red-sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-sprite.png"; sourceTree = "<group>"; };
 		FF2F2C8C1BBF29F30025C10B /* PKSCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKSCharacter.h; path = Classes/PKSCharacter.h; sourceTree = "<group>"; };
 		FF2F2C8D1BBF29F30025C10B /* PKSCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKSCharacter.m; path = Classes/PKSCharacter.m; sourceTree = "<group>"; };
+		FF2F2C901BBF3E830025C10B /* PKSBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKSBackground.h; path = Classes/PKSBackground.h; sourceTree = "<group>"; };
+		FF2F2C911BBF3E830025C10B /* PKSBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKSBackground.m; path = Classes/PKSBackground.m; sourceTree = "<group>"; };
+		FF2F2C941BBF45990025C10B /* PKSMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKSMap.h; path = Classes/PKSMap.h; sourceTree = "<group>"; };
+		FF2F2C951BBF45990025C10B /* PKSMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKSMap.m; path = Classes/PKSMap.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				FF2F2C8A1BBF28F30025C10B /* red-sprite.png */,
 				FF11461D1BBD35B10074A029 /* pokesaverView.h */,
 				FF11461F1BBD35B10074A029 /* pokesaverView.m */,
+				FF2F2C941BBF45990025C10B /* PKSMap.h */,
+				FF2F2C951BBF45990025C10B /* PKSMap.m */,
+				FF2F2C901BBF3E830025C10B /* PKSBackground.h */,
+				FF2F2C911BBF3E830025C10B /* PKSBackground.m */,
 				FF2F2C8C1BBF29F30025C10B /* PKSCharacter.h */,
 				FF2F2C8D1BBF29F30025C10B /* PKSCharacter.m */,
 				FF1146211BBD35B10074A029 /* Info.plist */,
@@ -74,7 +86,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2F2C921BBF3E830025C10B /* PKSBackground.h in Headers */,
 				FF11461E1BBD35B10074A029 /* pokesaverView.h in Headers */,
+				FF2F2C961BBF45990025C10B /* PKSMap.h in Headers */,
 				FF2F2C8E1BBF29F30025C10B /* PKSCharacter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,8 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2F2C931BBF3E830025C10B /* PKSBackground.m in Sources */,
 				FF2F2C8F1BBF29F30025C10B /* PKSCharacter.m in Sources */,
 				FF1146201BBD35B10074A029 /* pokesaverView.m in Sources */,
+				FF2F2C971BBF45990025C10B /* PKSMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

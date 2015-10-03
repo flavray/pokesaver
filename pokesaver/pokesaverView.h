@@ -7,12 +7,12 @@
 //
 
 #import <ScreenSaver/ScreenSaver.h>
+#import "PKSBackground.h"
 #import "PKSCharacter.h"
+#import "PKSMap.h"
 
 @interface pokesaverView : ScreenSaverView
 
-@property (nonatomic) NSImage* background;
-@property (nonatomic) PKSCharacter* mainCharacter;
-@property (nonatomic) int loop;
+@property (nonatomic) PKSMap* map;
 
 @end

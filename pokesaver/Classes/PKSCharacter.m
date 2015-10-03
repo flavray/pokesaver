@@ -11,7 +11,6 @@
 @interface PKSCharacter ()
 
 @property (nonatomic) NSSize frameSize;
-@property (nonatomic) int currentAnimation, currentFrame;
 
 @end
 
@@ -41,16 +40,20 @@
     return self;
 }
 
+#pragma mark - Animation methods
+
 - (void)setCurrentAnimation:(int)currentAnimation
 {
-    if ((currentAnimation > 0) && (currentAnimation < self.animations))
+    if ((currentAnimation >= 0) && (currentAnimation < self.animations))
         _currentAnimation = currentAnimation;
 }
 
 - (void)nextFrame
 {
-    self.currentFrame = (self.currentFrame + 1) % self.frames;
+    _currentFrame = (self.currentFrame + 1) % self.frames;
 }
+
+#pragma mark - Position methods
 
 - (NSRect)rect
 {
@@ -61,6 +64,27 @@
     result.size = self.frameSize;
 
     return result;
+}
+
+- (NSRect)bounds
+{
+    NSRect result;
+
+    result.origin = self.position;
+    result.size = NSMakeSize(15, 15);
+
+    return result;
+}
+
+- (int)dxFrame:(int)totalWidth
+{
+    return totalWidth / self.frames;
+}
+
+
+- (int)dyFrame:(int)totalHeight
+{
+    return totalHeight / self.frames;
 }
 
 @end
